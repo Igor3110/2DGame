@@ -3,7 +3,10 @@ package by.trofimov.game.util;
 import java.awt.*;
 import java.awt.image.*;
 
-public class Transparency {
+public final class Transparency {
+
+    private Transparency() {
+    }
 
     public static Image makeColorTransparent(Image im, final Color color) {
         ImageFilter filter = new RGBImageFilter() {
